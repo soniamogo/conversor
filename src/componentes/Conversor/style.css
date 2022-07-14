@@ -1,0 +1,26 @@
+h1{
+    color: rgb(80, 25, 132);
+}
+
+#titulo{
+    border-bottom: 1px solid rgb(156, 145, 145);
+}
+
+#conversor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+#separador{
+    border-right: 1px double rgb(247, 228, 228);
+}
+
+#datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+}
