@@ -1,13 +1,4 @@
-#input{
-    width: 170px;
-    height: 20px;
-    margin: 0em;
-    background-color: field;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
+
 
 #inputContainer{
     color: rgb(247, 228, 228);

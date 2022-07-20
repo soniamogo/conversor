@@ -12,18 +12,22 @@ export default class Conversor extends Component {
             result:'',
             origen: true
         }
+        this.handleClick = this.handleClick.bind(this);
     }
 
     conversion = (newValue) =>{
         if(this.state.origen){
             var result = newValue * 166.386;
-        this.setstate({value:newValue, result:result});
+        this.setState({value:newValue, result:result.toFixed(2)});
         }else{
             var result = newValue / 166.386;
-        this.setstate({value:newValue, result:result});
+        this.setState({value:newValue, result:result.toFixed(2)});
         }
-        
     }
+
+    handleClick() {
+        this.setState({result:'', origen:!this.state.origen})
+      }
 
     
     render() {
@@ -31,9 +35,11 @@ export default class Conversor extends Component {
             <div id="conversor">
                 <div id="titulo"><h1>Conversor tó guapo</h1></div>
                 <div id="datos">
-                    <Input value={this.state.value} conversion={this.conversion}/>
-                    <div id="separador" />
-                    <Visor result={this.state.result} />
+                    <Input value={this.state.value} conversion={this.conversion} origen={this.state.origen}/>
+                    <button onClick={this.handleClick}>
+                    {this.state.origen ? 'Pesetas a Euros' : 'Euros a Pesetas'}
+                    </button>
+                    <Visor result={this.state.result} origen={this.state.origen}/>
                 </div>
 
             </div>
