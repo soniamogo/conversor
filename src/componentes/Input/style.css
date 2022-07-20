@@ -4,3 +4,9 @@
     color: rgb(247, 228, 228);
     text-align: center;
 }
+
+@media screen and (max-width: 840px) {
+    #input{
+        margin-top: 10px;
+    }
+}

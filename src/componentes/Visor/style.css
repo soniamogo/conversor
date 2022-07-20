@@ -5,3 +5,9 @@
     margin-top: 0;
 }
 
+@media screen and (max-width: 840px) {
+    #visor{
+        margin-top: 10px;
+    }
+}
+

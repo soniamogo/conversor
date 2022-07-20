@@ -24,7 +24,9 @@
     
 }
 
+
 button{
+    
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -35,3 +37,32 @@ button{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+#icono{
+    width: 80% ;
+}
+
+#textoButton{
+    display: none;
+}
+
+@media screen and (max-width: 840px) {
+    #datos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 400px;
+        margin-top: 0;
+    }
+    button{
+        order: 3;
+        border-radius: 0%;
+        width: 75px;
+        height: 50px;
+    }
+    #icono{
+        display: none;
+    }
+    #textoButton{
+        display: block;
+    }
+}
